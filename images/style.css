@@ -1,0 +1,137 @@
+body {
+     background-color: rgb(237, 211, 215);
+     margin: 0;
+     font-family: sans-serif;
+     overflow-x: hidden;
+}
+
+body > header {
+     width: 80vw;
+     background-color: rgb(255, 255, 255);
+     margin: 20px auto;
+     border-radius: 6px;
+     display: flex;
+     justify-content: space-evenly;
+     box-shadow: 0 0 10px 0 rgba(0,0,0,0.2);
+}
+
+body > header > img {
+     width: 200px;
+     height: 200px;
+     border-radius: 100%;
+     margin: 20px;
+}
+
+body > header > div {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+}
+
+body > header > div > h1 {
+     font-family: 'Mynerve', cursive;
+     font-size: 3em;
+     margin: 0;
+}
+
+body > header > div > p {
+     font-size: 1em;
+     margin: 0;
+}
+
+body > main > section {
+     margin: 30px;
+}
+
+body > main > section#about {
+     display: flex;
+     justify-content: space-between;
+}
+
+body > main > section#about > div {
+     width: 28%;
+     padding: 2%;
+     background: rgb(255,255,255);
+     border-radius: 6px;
+     box-shadow: 0 0 10px 0 rgba(0,0,0,0.2);
+     transition: all 0.2s ease-in-out;
+     cursor: pointer;
+     text-align: justify; 
+}
+
+body > main > section#about > div:hover {
+     transform: scale(1.05);
+
+}
+
+body > main > section#about > div > img {
+     width: 60%;
+     margin: 10% 20%;
+}
+
+body > main > section#skills {
+     display: inline-block;
+}
+
+body > main > section#skills > div {
+    text-align: justify;
+    width: 50vw;
+    padding: 5vw;
+    margin: 3% 10vw;
+    border-left: solid #000 3px;
+    border-bottom: solid #000 3px;
+    border-radius: 0 30px;
+}
+
+body > main > section#skills > img {
+     width: calc(100vw - 60px);
+}
+
+
+
+
+
+
+body > footer {
+     background: rgb(0, 0, 0);
+     color: rgb(255, 255, 255);
+     display: flex;
+     justify-content: space-evenly;
+}
+
+body > footer > div#social {
+     display: flex;
+     flex-direction: column;
+     justify-content: space-evenly;
+}
+
+body > footer > div > a {
+     text-decoration: none;
+     color: rgb(255, 255, 255);
+     margin: 10px 25px;
+}
+
+body > footer > div > a:hover {
+     color: rgb(237, 211, 215);
+}
+
+body > footer > div#message > p {
+     font-family: 'Mynerve', cursive;
+     font-size: 50px;
+}
+
+
+@media screen and (max-width: 650px) {
+     body > main > section#about {
+          flex-direction: column;
+     }
+     
+     body > main > section#about > div {
+          width: 80%;
+          margin: 10%;
+     }
+     
+     body > main > section#skills {
+          display: block;
+     }
+}
